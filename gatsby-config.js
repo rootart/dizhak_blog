@@ -3,16 +3,27 @@ module.exports = {
     title: `The Act of Coding`,
     description: ``,
     author: `@rootart`,
+    siteUrl: `https://dizhak.com`
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
     resolve: `gatsby-transformer-remark`,
     options: {
       plugins: [
+        `gatsby-remark-reading-time`,
+        `gatsby-remark-images`,
         {
           resolve: `gatsby-remark-prismjs`
         },
+        {
+          resolve: "gatsby-remark-external-links",
+          options: {
+            target: "_blank",
+            rel: "nofollow"
+          }
+        }
       ],
     },
   },
@@ -44,6 +55,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [`G-SXVRCTWDGL`]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

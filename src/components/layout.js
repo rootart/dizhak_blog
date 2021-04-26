@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         <footer>
           © {new Date().getFullYear()}, Built with ❤️ in Zürich
           {` `}
-          <a href="htts://dizhak.com">Vasyl Dizhak</a>
+          <a href="/about/">Vasyl Dizhak</a>
         </footer>
       </div>
     </>
