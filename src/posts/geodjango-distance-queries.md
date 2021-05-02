@@ -256,4 +256,7 @@ Having annotated `buff` value comes handier when answering a question if there a
 
 ## Footnotes
 
-The described approach has obvious performance penalties and in the next article, we will go through measuring its speed and optimizing it using database indexes and `ST_DWithin` function. Bye:) 
+The described approach has obvious performance penalties and in the next article, we will go through measuring its speed and optimizing it using database indexes and `ST_DWithin` function. Bye:)
+
+## Updates 
+[Part 2](/query-objects-with-geodjango-part-2)
