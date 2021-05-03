@@ -7,6 +7,7 @@ tags: ["geodjango", "django", "ORM", "postgis", "GIS"]
 resources: ["https://docs.djangoproject.com/en/3.0/ref/contrib/gis/db-api/"]
 ---
 
+![GeoDjango](../images/posts/geodjango-distance-queries/GeoDjango-poster.png)
 The first [article](/query-objects-with-geodjango-part-1) mentioned concerns about the speed 
 of the selected approach as for every geometry an additional buffer should be prepared and that is rather time-consuming.
 It is about time to measure these performance penalties and see what we can do with them.
